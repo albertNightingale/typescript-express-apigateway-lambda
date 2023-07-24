@@ -5,7 +5,8 @@
     "aws-express": "bin/aws-express.js"
   },
   "scripts": {
-    "build": "rm -rf ./compiled_code/ && tsc",
+    "clean": "rm -rf ./compiled_code/",
+    "build": "npm run clean && tsc && cp src/package.json compiled_code/src && cd compiled_code/src && npm i",
     "watch": "tsc -w",
     "test": "jest",
     "deploy": "npm run build && cdk deploy",
