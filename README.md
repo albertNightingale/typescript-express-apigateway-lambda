@@ -11,10 +11,10 @@ Just the compiled code will not work, you also need to install the node modules 
 
 ## Useful commands
 
-* `npm run build`   compile typescript to js
-* `npm run watch`   watch for changes and compile
-* `npm run test`    perform the jest unit tests
-* `cdk deploy`      deploy this stack to your default AWS account/region
-* `cdk diff`        compare deployed stack with current state
-* `cdk synth`       emits the synthesized CloudFormation template
+* `npm run clean`   clean up the compiled files
+* `npm run build`   compiles the typescripts to js
+* `npm run deploy`    deploy this stack to your default AWS account/region
+* `npm run synth`      build the bundle for aws deployment and compute the .yaml file
+* `npm run jest`        perform the jest unit tests
+* `npm run watch`       watch for changes and compile
 
